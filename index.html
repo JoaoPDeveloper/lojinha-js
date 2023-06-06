@@ -1,140 +1,452 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&amp;display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio 21</title>
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <script type="text/javascript" src="./index.js" defer=""></script>
-    <link rel="stylesheet" href="./index.css">
-  </head>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&amp;display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja de Informática</title>
+  <link rel="stylesheet" href="./assets/styles/index.css">
+</head>
 
-  <body>
-    <div id="app">
-      <header>
-        <div class="title">
-          Seu carinho tem <strong>5 itens</strong>
+<body>
+
+  <div class="totalCards">
+    <div class="card">
+      <div class="pricing-block-content">
+        <img src="https://i.ibb.co/WGr42by/product-image-cadeira.jpg" alt="cadeira-gamer" class="productImg">
+        <p class="pricing-plan">Cadeira Gamer RGB - Preta com Iluminação (Led)</p>
+        <div class="price-value" data-currency="$ USD" data-currency-simple="USD">
+          <p class="price-number">R$<span class="price-integer">79,99</span></p>
+          <div id="priceDiscountCent">/12x</div>
         </div>
-        <i class="ph ph-x"></i>
-      </header>
-      <main>
-        <div class="item">
-          <img src="https://i.ibb.co/N7wkF04/product-image-monitor.jpg" alt="">
-          <div class="details">
-            <div class="title">Monitor Gamer Curvo 49 DQHD, 240Hz, 1ms, HDMI... </div>
-            <div class="price-qty">
-              <div class="price1">R$ 8.599,90</div>
-              <div class="qty">
-                <button class="sub" id="buttonDecrement1">
-                  <i class="ph ph-minus"></i>
-                </button>
-                <input id="counterValue1" value="1">
-                <button class="add" id="buttonIncrement1">
-                  <i class="ph ph-plus"></i>
-                </button>
-              </div>
+        <div class="pricing-note">Frete Gratuito</div>
+        <ul class="check-list" role="list">
+          <button id="openModalBtn">Sobre o Produto</button>
+
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <a href="https://images.tcdn.com.br/img/img_prod/1048393/cadeira_gamer_fox_racer_rgb_preta_com_iluminacao_led_1_1_0a6c234710daa4136085d8b98fdaed91.jpg"
+                target="_blank">
+                <img
+                  src="https://images.tcdn.com.br/img/img_prod/1048393/cadeira_gamer_fox_racer_rgb_preta_com_iluminacao_led_1_1_0a6c234710daa4136085d8b98fdaed91.jpg"
+                  alt="" class="imgProdutoInterno">
+              </a>
+              <a href="https://images.tcdn.com.br/img/img_prod/1048393/cadeira_gamer_fox_racer_rgb_preta_com_iluminacao_led_1_2_cb766e30191ad8d49cc16c9a05a260b3.jpg"
+                target="_blank">
+                <img
+                  src="https://images.tcdn.com.br/img/img_prod/1048393/cadeira_gamer_fox_racer_rgb_preta_com_iluminacao_led_1_2_cb766e30191ad8d49cc16c9a05a260b3.jpg"
+                  alt="" class="imgProdutoInterno">
+              </a>
+              <a href="https://images.tcdn.com.br/img/img_prod/1048393/cadeira_gamer_fox_racer_rgb_preta_com_iluminacao_led_1_3_da22891b5e0a71358b7dbd668182fa47_20220120190051.jpg"
+                target="_blank">
+
+                <img
+                  src="https://images.tcdn.com.br/img/img_prod/1048393/cadeira_gamer_fox_racer_rgb_preta_com_iluminacao_led_1_3_da22891b5e0a71358b7dbd668182fa47_20220120190051.jpg"
+                  alt="" class="imgProdutoInterno">
+              </a>
+              <br>
+              <h2>Monitor Gamer Samsung Odyssey G9</h2>
+              <p>Especificações:</p>
+              <br>
+              <li class="lista">
+                <ol>- Marca: Samsung</ol>
+                <ol>- Modelo: LC49G95TSSLXZD</ol>
+                <ol>- Tamanho da Tela: 49"</ol>
+                <ol>- Tipo de Painel: VA</ol>
+                <ol>- Curvatura da Tela: 1000R</ol>
+                <ol>- Brilho (típico): 420 cd/m2</ol>
+                <ol>- Brilho Máximo: 1000 cd/m2</ol>
+                <ol>- Contraste Estático: 2500:1</ol>
+                <ol>- Resolução: 5120 x 1440</ol>
+                <ol>- Proporção de Tela: 32:9</ol>
+                <ol>- Tempo de Resposta: 1 ms</ol>
+                <ol>- Taxa de Atualização: Max 240 Hz</ol>
+                <ol>- Ângulo de Visão (Horizontal / Vertical): 178°/178°</ol>
+              </li>
             </div>
           </div>
-        </div>
-        <div class="item">
-          <img src="https://i.ibb.co/WGr42by/product-image-cadeira.jpg" alt="">
-          <div class="details">
-            <div class="title">Cadeira Gamer RGB - Preta com Iluminação (Led)</div>
-            <div class="price-qty">
-              <div class="price2">R$ 959,90</div>
-              <div class="qty">
-                <button class="sub" id="buttonDecrement2">
-                  <i class="ph ph-minus"></i>
-                </button>
-                <input id="counterValue2" value="1">
-                <button class="add" id="buttonIncrement2">
-                  <i class="ph ph-plus"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="https://i.ibb.co/XpcZXXr/product-image-teclado.jpg" alt="">
-          <div class="details">
-            <div class="title">Teclado Gamer Mecânico Low Profile RGB AW510K 580</div>
-            <div class="price-qty">
-              <div class="price3">R$ 1.002,00</div>
-              <div class="qty">
-                <button class="sub" id="buttonDecrement3">
-                  <i class="ph ph-minus"></i>
-                </button>
-                <input id="counterValue3" value="1">
-                <button class="add" id="buttonIncrement3">
-                  <i class="ph ph-plus"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="https://i.ibb.co/10rSsR1/product-image-headset.jpg" alt="">
-          <div class="details">
-            <div class="title">Headset Gamer, RGB, Drivers 50mm, Preto
-            </div>
-            <div class="price-qty">
-              <div class="price4">R$ 500,99</div>
-              <div class="qty">
-                <button class="sub" id="buttonDecrement4">
-                  <i class="ph ph-minus"></i>
-                </button>
-                <input id="counterValue4" value="1">
-                <button class="add" id="buttonIncrement4">
-                  <i class="ph ph-plus"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="https://m.media-amazon.com/images/I/6104JBWc6wL._AC_SL1500_.jpg" alt="">
-          <div class="details">
-            <div class="title">
-              Mouse Gamer Sem Fio Logitech G502 X LIGHTSPEED com Switch LIGHTFORCE</div>
-            <div class="price-qty">
-              <div class="price5">R$759,00</div>
-              <div class="qty">
-                <button class="sub" id="buttonDecrement5">
-                  <i class="ph ph-minus"></i>
-                </button>
-                <input id="counterValue5" value="1">
-                <button class="add" id="buttonIncrement5">
-                  <i class="ph ph-plus"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
-      <footer>
-        <div class="total" id="total">
-          <span>Total:</span>
-          <strong id="valorTotal" value="6">R$ 11821.79</strong>
-        </div>
-        <div class="coupon">
-          <i class="ph ph-tag"></i>
-          <span id="btn">Adicionar cupom</span>
-        </div>
-        <div class="input">
-          <input type="text" id="cupom" style="display:none" >
-        </div>
-        <span id="mensagemDesconto"></span>
-        <a href="#">
-          <button >Finalizar Compra</button>
-        </a>
-      </footer>
+      </div>
     </div>
 
-  </body>
+    <div class="card">
+      <div class="pricing-block-content">
+        <img src="https://i.ibb.co/N7wkF04/product-image-monitor.jpg" alt="monitorGamer" class="productImg">
+        <p class="pricing-plan">Monitor Gamer Curvo 49 DQHD, 240Hz, 1ms, HDMI e DisplayPort, HDR 100%, FreeSync...</p>
+        <div class="price-value" data-currency="$ USD" data-currency-simple="USD">
+          <p class="price-number">R$<span class="price-integer">716,65</span></p>
+          <div id="priceDiscountCent">/12x</div>
+        </div>
+        <div class="pricing-note">Frete Gratuito</div>
+        <ul class="check-list" role="list">
+          <button id="openModalBtnMonitor">Sobre o Produto</button>
+
+          <div id="myModalMonitor" class="modal">
+            <div class="modal-content">
+              <span class="closeMonitor">&times;</span>
+              <a href="https://www.kabum.com.br/conteudo/descricao/129919/img/wqhd-samsung.jpg" target="_blank">
+                <img src="https://www.kabum.com.br/conteudo/descricao/129919/img/wqhd-samsung.jpg" alt=""
+                  class="imgProdutoInterno">
+              </a>
+              <a href="https://www.kabum.com.br/conteudo/descricao/129919/img/aprofunde-samsung.jpg" target="_blank">
+                <img src="https://www.kabum.com.br/conteudo/descricao/129919/img/aprofunde-samsung.jpg" alt=""
+                  class="imgProdutoInterno">
+              </a>
+              <a href="https://www.kabum.com.br/conteudo/descricao/129919/img/galeria-4.jpg" target="_blank">
+
+                <img src="https://www.kabum.com.br/conteudo/descricao/129919/img/galeria-4.jpg" alt=""
+                  class="imgProdutoInterno">
+              </a>
+              <br>
+              <h2>Monitor Gamer Samsung Odyssey G9</h2>
+              <p>Especificações:</p>
+              <br>
+              <li class="lista">
+                <ol>- Marca: Samsung</ol>
+                <ol>- Modelo: LC49G95TSSLXZD</ol>
+                <ol>- Tamanho da Tela: 49"</ol>
+                <ol>- Tipo de Painel: VA</ol>
+                <ol>- Curvatura da Tela: 1000R</ol>
+                <ol>- Brilho (típico): 420 cd/m2</ol>
+                <ol>- Brilho Máximo: 1000 cd/m2</ol>
+                <ol>- Contraste Estático: 2500:1</ol>
+                <ol>- Resolução: 5120 x 1440</ol>
+                <ol>- Proporção de Tela: 32:9</ol>
+                <ol>- Tempo de Resposta: 1 ms</ol>
+                <ol>- Taxa de Atualização: Max 240 Hz</ol>
+                <ol>- Ângulo de Visão (Horizontal / Vertical): 178°/178°</ol>
+              </li>
+            </div>
+          </div>
+
+      </div>
+    </div>
+    <div class="card">
+      <div class="pricing-block-content">
+        <img src="https://i.ibb.co/XpcZXXr/product-image-teclado.jpg" alt="tecladoGamer" class="productImg">
+        <p class="pricing-plan">TECLADO GAMER MECÂNICO ALIENWARE LOW PROFILE RGB AW510K</p>
+        <div class="price-value" data-currency="$ USD" data-currency-simple="USD">
+          <p class="price-number">R$<span class="price-integer">83,5</span></p>
+          <div id="priceDiscountCent">/12x</div>
+        </div>
+        <div class="pricing-note">Frete Gratuito</div>
+        <ul class="check-list" role="list">
+          <button id="openModalBtnKeyboard">Sobre o Produto</button>
+
+          <div id="myModalKeyboard" class="modal">
+            <div class="modal-content">
+              <span class="closeKeyboard">&times;</span>
+              <a href="https://i.dell.com/is/image/DellContent/content/dam/images/products/electronics-and-accessories/dell/keyboards/aw510k/aw510k-ckb-90000td-gy.psd?fmt=pjpg&pscan=auto&scl=1&wid=3586&hei=2608&qlt=100,1&resMode=sharp2&size=3586,2608&chrss=full&imwidth=5000"
+                target="_blank">
+                <img
+                  src="https://i.dell.com/is/image/DellContent/content/dam/images/products/electronics-and-accessories/dell/keyboards/aw510k/aw510k-ckb-90000td-gy.psd?fmt=pjpg&pscan=auto&scl=1&wid=3586&hei=2608&qlt=100,1&resMode=sharp2&size=3586,2608&chrss=full&imwidth=5000"
+                  alt="" class="imgProdutoInterno">
+              </a>
+              <a href="https://i.dell.com/is/image/DellContent/content/dam/images/products/electronics-and-accessories/dell/keyboards/aw510k/aw510k-ckb-3060rf-gy.psd?fmt=pjpg&pscan=auto&scl=1&wid=3724&hei=2419&qlt=100,1&resMode=sharp2&size=3724,2419&chrss=full&imwidth=5000"
+                target="_blank">
+                <img
+                  src="https://i.dell.com/is/image/DellContent/content/dam/images/products/electronics-and-accessories/dell/keyboards/aw510k/aw510k-ckb-3060rf-gy.psd?fmt=pjpg&pscan=auto&scl=1&wid=3724&hei=2419&qlt=100,1&resMode=sharp2&size=3724,2419&chrss=full&imwidth=5000"
+                  alt="" class="imgProdutoInterno">
+              </a>
+              <a href="https://i.dell.com/is/image/DellContent/content/dam/images/products/electronics-and-accessories/dell/keyboards/aw510k/aw510k-ckb-2020lf-gy.psd?fmt=pjpg&pscan=auto&scl=1&wid=3723&hei=1147&qlt=100,1&resMode=sharp2&size=3723,1147&chrss=full&imwidth=5000"
+                target="_blank">
+
+                <img
+                  src="https://i.dell.com/is/image/DellContent/content/dam/images/products/electronics-and-accessories/dell/keyboards/aw510k/aw510k-ckb-2020lf-gy.psd?fmt=pjpg&pscan=auto&scl=1&wid=3723&hei=1147&qlt=100,1&resMode=sharp2&size=3723,1147&chrss=full&imwidth=5000"
+                  alt="" class="imgProdutoInterno">
+              </a>
+              <br>
+              <h2>TECLADO GAMER MECÂNICO ALIENWARE LOW PROFILE RGB AW510K
+              </h2>
+              <p>ESPECIFICAÇÕES TÉCNICAS
+                :</p>
+              <br><br>
+              <li class="lista">
+                <ol>- Marca: ALIENWARE</ol>
+                <ol>- Teclas Cherry MX compactas de última geração
+                </ol>
+                <ol>- Durabilidade de 50 milhões de pressionamento das teclas sem qualquer perda de qualidade</ol>
+                <ol>- Tipo de Painel: VA</ol>
+                <ol>- Teclas totalmente programáveis para macros e atribuições de tecla
+                </ol>
+                <ol>- Memória integrada para armazenamento de configurações no dispositivo
+                </ol>
+                <ol>- Controle de áudio dedicado com rolagem de som que oferece um ajuste rápido e preciso
+                </ol>
+                <ol>- Iluminação RGB AlienFX por tecla de 16,8 milhões de cores
+                </ol>
+                <ol>- Arquitetura de teclas flutuantes
+                </ol>
+                <ol>- Anti-ghosting/pressionamento simultâneo de teclas
+                  /ol>
+                  <ol>- Um layout reformulado de 3 seções
+                  </ol>
+                  <ol>Passagem USB e teclas de mídia dedicadas
+                  </ol>
+              </li>
+            </div>
+          </div>
+
+      </div>
+    </div>
+    <div class="card">
+      <div class="pricing-block-content">
+        <img src="https://i.ibb.co/10rSsR1/product-image-headset.jpg" alt="headsetGamer" class="productImg">
+        <p class="pricing-plan">HEADSET GAMER MANCER TWILIGHT, RAINBOW, DRIVERS 50MM, PRETO, MCR-TLT-RGB02
+        </p>
+        <div class="price-value" data-currency="$ USD" data-currency-simple="USD">
+          <p class="price-number">R$<span class="price-integer">41,74</span></p>
+          <div id="priceDiscountCent">/12x</div>
+        </div>
+        <div class="pricing-note">Frete Gratuito</div>
+        <button id="openModalBtnHeadSet">Sobre o Produto</button>
+
+        <div id="myModalHeadSet" class="modal">
+          <div class="modal-content">
+            <span class="closeHeadSet">&times;</span>
+            <a href="https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/m/c/mcr-tlt-rgb02312.jpg"
+              target="_blank">
+              <img
+                src="https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/m/c/mcr-tlt-rgb02312.jpg "
+                alt="" class="imgProdutoInterno">
+            </a>
+            <a href="https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/m/c/mcr-tlt-rgb02_1.jpg"
+              target="_blank">
+              <img
+                src="https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/m/c/mcr-tlt-rgb02_1.jpg"
+                alt="" class="imgProdutoInterno">
+            </a>
+            <a href="https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/m/c/mcr-tlt-rgb023122.jpg"
+              target="_blank">
+
+              <img
+                src="https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/m/c/mcr-tlt-rgb023122.jpg"
+                alt="" class="imgProdutoInterno">
+            </a>
+            <br>
+            <h2>TECLADO GAMER MECÂNICO ALIENWARE LOW PROFILE RGB AW510K
+            </h2>
+            <p>ESPECIFICAÇÕES TÉCNICAS
+              :</p>
+            <br><br>
+            <li class="lista">
+              <ol>Marca: Mancer</ol>
+              <ol>- Modelo: MCR-TLT-RGB02
+              </ol>
+              <ol>- Iluminação: Rainbow</ol>
+              <ol>- Superfície: ABS</ol>
+              <ol>- Microfone: Ajustável
+              </ol>
+              <ol>- Frequência: 20Hz – 20KHz
+              </ol>
+              <ol>- Impedância: 20 ohm
+              </ol>
+              <ol>- Driver: 50mm
+              </ol>
+
+              <ol> - Sensibilidade: 112+/-3db</ol>
+              <ol>Sensibilidade do microfone: 38±3db</ol>
+              <ol>- Conectores: USB
+                2 x 3.5 mini jack
+              </ol>
+              <ol>Tipo de cabo: PVC 2.0 m
+              </ol>
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="pricing-block-content">
+        <img src="https://m.media-amazon.com/images/I/6104JBWc6wL._AC_SL1500_.jpg" alt="mouseGamer" class="productImg">
+        <p class="pricing-plan"> Mouse Gamer Sem Fio Logitech G502 X LIGHTSPEED com Switch LIGHTFORCE</p>
+        <div class="price-value" data-currency="$ USD" data-currency-simple="USD">
+          <p class="price-number">R$<span class="price-integer">63,25</span></p>
+          <div id="priceDiscountCent">/12x</div>
+        </div>
+        <div class="pricing-note">Frete Gratuito</div>
+        <ul class="check-list" role="list">
+          <button id="openModalBtnMouse">Sobre o Produto</button>
+
+          <div id="myModalMouse" class="modal">
+            <div class="modal-content">
+              <span class="closeMouse">&times;</span>
+              <a href="https://m.media-amazon.com/images/I/6104JBWc6wL._AC_SL1500_.jpg" target="_blank">
+                <img src="https://m.media-amazon.com/images/I/6104JBWc6wL._AC_SL1500_.jpg " alt=""
+                  class="imgProdutoInterno">
+              </a>
+              <a href="https://m.media-amazon.com/images/I/71qzS99YvZL._AC_SL1500_.jpg" target="_blank">
+                <img src="https://m.media-amazon.com/images/I/71qzS99YvZL._AC_SL1500_.jpg" alt=""
+                  class="imgProdutoInterno">
+              </a>
+              <a href="https://m.media-amazon.com/images/I/713aZIcwSOL._AC_SL1500_.jpg" target="_blank">
+                <img src="https://m.media-amazon.com/images/I/713aZIcwSOL._AC_SL1500_.jpg" alt=""
+                  class="imgProdutoInterno">
+              </a>
+              <br>
+              <h2>Mouse Gamer Sem Fio Logitech G502 X LIGHTSPEED com Switch LIGHTFORCE
+              </h2>
+              <p>ESPECIFICAÇÕES TÉCNICAS
+                :</p>
+              <br><br>
+              <li class="lista">
+                <ol>Marca: ‎Logitech G
+                </ol>
+                <ol>- Modelo: ‎Logitech G
+                </ol>
+                <ol>- Sensor Hero 25K com rastreamento máximo de 25.600 DPI.
+
+                </ol>
+                <ol>- 13 botões programáveis.</ol>
+                <ol>- Até 120 horas de bateria (37 horas com RGB ligado).
+                </ol>
+                <ol>- Até 5 perfis de memória integrada.
+                </ol>
+                <ol>- Entrada de carregamento USB-C.
+                </ol>
+                <ol>- 24 meses de garantia
+                </ol>
+                <ol>- Iluminação RGB.</ol>
+                <ol>Tipo de cabo: PVC 2.0 m
+                </ol>
+              </li>
+            </div>
+          </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  </div>
+  <div id="app">
+    <header>
+      <div class="title">
+        Seu carinho tem <strong>5 itens</strong>
+      </div>
+      <i class="ph ph-x"></i>
+    </header>
+    <main>
+      <div class="item">
+        <img src="https://i.ibb.co/N7wkF04/product-image-monitor.jpg" alt="">
+        <div class="details">
+          <div class="title">Monitor Gamer Curvo 49 DQHD, 240Hz, 1ms, HDMI... </div>
+          <div class="price-qty">
+            <div class="price1">R$ 8.599,90</div>
+            <div class="qty">
+              <button class="sub" id="buttonDecrement1">
+                <i class="ph ph-minus"></i>
+              </button>
+              <input id="counterValue1" value="1">
+              <button class="add" id="buttonIncrement1">
+                <i class="ph ph-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://i.ibb.co/WGr42by/product-image-cadeira.jpg" alt="">
+        <div class="details">
+          <div class="title">Cadeira Gamer RGB - Preta com Iluminação (Led)</div>
+          <div class="price-qty">
+            <div class="price2">R$ 959,90</div>
+            <div class="qty">
+              <button class="sub" id="buttonDecrement2">
+                <i class="ph ph-minus"></i>
+              </button>
+              <input id="counterValue2" value="1">
+              <button class="add" id="buttonIncrement2">
+                <i class="ph ph-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://i.ibb.co/XpcZXXr/product-image-teclado.jpg" alt="">
+        <div class="details">
+          <div class="title">Teclado Gamer Mecânico Low Profile RGB AW510K 580</div>
+          <div class="price-qty">
+            <div class="price3">R$ 1.002,00</div>
+            <div class="qty">
+              <button class="sub" id="buttonDecrement3">
+                <i class="ph ph-minus"></i>
+              </button>
+              <input id="counterValue3" value="1">
+              <button class="add" id="buttonIncrement3">
+                <i class="ph ph-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://i.ibb.co/10rSsR1/product-image-headset.jpg" alt="">
+        <div class="details">
+          <div class="title">Headset Gamer, RGB, Drivers 50mm, Preto
+          </div>
+          <div class="price-qty">
+            <div class="price4">R$ 500,99</div>
+            <div class="qty">
+              <button class="sub" id="buttonDecrement4">
+                <i class="ph ph-minus"></i>
+              </button>
+              <input id="counterValue4" value="1">
+              <button class="add" id="buttonIncrement4">
+                <i class="ph ph-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://m.media-amazon.com/images/I/6104JBWc6wL._AC_SL1500_.jpg" alt="">
+        <div class="details">
+          <div class="title">
+            Mouse Gamer Sem Fio Logitech G502 X LIGHTSPEED com Switch LIGHTFORCE</div>
+          <div class="price-qty">
+            <div class="price5">R$759,00</div>
+            <div class="qty">
+              <button class="sub" id="buttonDecrement5">
+                <i class="ph ph-minus"></i>
+              </button>
+              <input id="counterValue5" value="1">
+              <button class="add" id="buttonIncrement5">
+                <i class="ph ph-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="total" id="total">
+        <span>Total:</span>
+        <strong id="valorTotal" value="6">R$ 11821.79</strong>
+      </div>
+      <div class="coupon">
+        <i class="ph ph-tag"></i>
+        <span id="btn">Adicionar cupom</span>
+      </div>
+
+      <div class="input">
+        <input type="text" id="cupom" style="display:none">
+        <button class="btnConfirma" style="display: none;">Confirmar Cupom</button>
+      </div>
+
+      <span id="mensagemDesconto"></span>
+      <a href="#">
+        <button>Finalizar Compra</button>
+      </a>
+    </footer>
+  </div>
+
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script type="text/javascript" src="./js/index.js" defer=""></script>
+</body>
 
 </html>
