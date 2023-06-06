@@ -1,0 +1,211 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+	--color-brand-color: #9333ea;
+	--color-brand-color-light: #a855f7;
+	--color-brand-color-lighter: #c084fc;
+	--color-text-color-primary: #f9fafb;
+	--color-text-color-secondary: #e4e4e7;
+	--color-close-button-color: #a1a1aa;
+	--color-stroke-color: #3f3f46;
+	--color-surface-color: #18181b;
+	--color-background-color: #09090b;
+  
+  font-family: Inter;
+  font-size: 62.5%;
+}
+body{
+  font-size: 1.6rem;
+  color: var(--color-text-color-primary);
+  background-color: var(--color-background-color);
+}
+#app{
+  height: 100vh;
+  max-width: 42.8rem;
+  margin-left: auto;
+  background-color: var(--color-surface-color);
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+}
+
+/* header */
+header{
+  font-size: 2rem; 
+  color: var(--color-text-color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var (var(--color-stroke-color));
+  padding: 2.4rem 3.2rem;
+}
+::-webkit-scrollbar{
+  width: .6rem;
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--color-stroke-color);
+  border-radius: .8rem;
+}
+::-webkit-scrollbar-track{
+  background-color: var(--color-background-color);
+}
+
+/* main */
+main{
+  padding: 3.2rem;
+  display: grid;
+  place-content: start;
+  gap: 4.8rem;
+  overflow-y: scroll;
+}
+.price{
+  font-weight: 700;
+}
+.item .title{
+  color: var(--color-text-color-secondary);
+}
+.item{
+  display: flex;
+  gap: 2.4rem;
+}
+
+.item img{
+  width: 10.4rem;
+  height: 10.4rem;
+  object-fit: cover;
+  border-radius: .8rem;
+}
+
+.price-qty{
+  margin-top: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.qty{
+  display: flex;
+  align-items: center;
+}
+input{
+  background-color: transparent;
+  color: white;
+  text-shadow: white;
+  text-align: center;
+}
+.qty input,
+.qty button{
+  width: 4.5rem;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+.qty button{
+  border-radius: .8rem;
+  border: 1px solid white;
+  background-color: transparent;
+  color: var(--color-brand-color-light);
+  cursor: pointer;
+}
+.qty button add{
+  border-color: var(--color-brand-color-light);
+}
+.qty button.add:hover{
+  background-color: var(--color-brand-color-light);
+  color: var(--color-text-color-primary);
+}
+.qty button.sub{
+  border-color: var(--color-stroke-color);
+}
+.qty button.sub:hover{
+  color: var(--color-text-color-primary);
+  border-color: var(--color-brand-color-light);
+}
+/*footer*/
+
+footer{
+  padding: 3.2rem;
+  border-top: 1px solid var(--color-stroke-color);
+}
+
+.total{
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+.coupon{
+  margin-top: 1.6rem;
+  color: var(--color-brand-color-light);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: .8rem;
+    cursor: pointer;
+}
+.coupon i{
+  font-size: 2rem;
+}
+
+
+
+footer button{
+  margin-top: 3.2rem;
+  background-color: var(--color-brand-color);
+  color: var(--color-text-color-primary);
+  border: 0;
+  font-size: 2rem;
+  padding-block: 2rem;
+  width: 100%;
+  border-radius: .8rem;
+    cursor: pointer;
+}
+
+
+footer button:hover{
+  background-color: var(--color-brand-color-light);
+}
+.input {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 1em 0 1em 0;
+  max-width: 190px;
+  position: relative;
+}
+
+.input input {
+  font-size: 100%;
+  padding: 0.8em;
+  outline: none;
+  border: 2px solid rgb(141, 109, 255);
+  background-color: transparent;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.input label {
+  font-size: 100%;
+  position: absolute;
+  left: 0;
+  padding: 0.8em;
+  margin-left: 0.5em;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: rgb(255, 255, 255);
+}
+
+.input :is(input:focus, input:valid)~label {
+  transform: translateY(-50%) scale(.9);
+  margin: 0em;
+  margin-left: 1.3em;
+  padding: 0.4em;
+  background-color: #212121;
+}
+
+.inputGroup :is(input:focus, input:valid) {
+  border-color: rgb(37, 37, 211);
+}
